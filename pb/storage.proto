@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "./pb";
+
+
+package proto;
+
+
+service Storage {
+  rpc CreateTask(Task) returns (Feature) {}
+}
+
+message Task {
+  string image_name = 1;
+}
+
+message Feature {
+  string name = 1;
+}

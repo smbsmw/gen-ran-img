@@ -1,0 +1,30 @@
+AppVersion: 1.0.0
+
+Server:
+  Port: :5000
+  Development: true
+  Timeout: 15
+  ReadTimeout: 5
+  WriteTimeout: 5
+  MaxConnectionIdle: 5
+  MaxConnectionAge: 5
+
+Http:
+  Port: :8082
+  Timeout: 15
+  ReadTimeout: 5
+  WriteTimeout: 5
+  CookieLifeTime: 44640
+  SessionCookieName: "session_token"
+
+Kafka:
+  Brokers: ["kafka:9093"]
+
+Minio:
+  Addr: "minio:9000"
+
+Logger:
+  DisableCaller: false
+  DisableStacktrace: false
+  Encoding: json
+  Level: info

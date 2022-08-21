@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /api/v1/generate_image:
+    post:
+      consumes:
+      - application/json
+      description: Creates new random image with provided name
+      operationId: generate-img
+      parameters:
+      - description: image name
+        in: body
+        name: image_name
+        required: true
+        schema:
+          type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: Generate random image
+swagger: "2.0"
