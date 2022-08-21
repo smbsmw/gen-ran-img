@@ -24,7 +24,7 @@ curl -X 'POST' \
   
 # If ok, returns the same value "my_pic"
 # Сreates random image with suffix name "my_pic" in Minio
-# Minio http://localhost:8081 minioadmin:minioadmin 
+# Minio http://localhost:9000 minioadmin:minioadmin 
 ```
 
 
