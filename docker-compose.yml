@@ -9,9 +9,6 @@ services:
       - '8081:8081'
     environment:
       MODE: "DOCKER"
-      HTTP_PORT: '8081'
-      LOG_LEVEL: 'debug'
-      STORAGE_HOST: ':50051'
     depends_on:
       - storage
       - downloader
@@ -25,8 +22,6 @@ services:
       - '50051:50051'
     environment:
       MODE: "DOCKER"
-      HTTP_PORT: '8081'
-      LOG_LEVEL: 'debug'
     depends_on:
       - downloader
 
@@ -39,8 +34,6 @@ services:
       - '50052:50052'
     environment:
       MODE: "DOCKER"
-      HTTP_PORT: '8081'
-      LOG_LEVEL: 'debug'
     depends_on:
       kafka:
         condition: service_healthy
